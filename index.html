@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oman Air Virtual</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #0b0b0b;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.hero {
+  height: 90vh;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6), #0b0b0b), url("hero.jpg") center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+section {
+  padding: 60px 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+
+.rank-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.rank-card {
+  background: #111;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.rank-card:hover {
+  box-shadow: 0 0 20px rgba(200,169,106,0.5);
+}
+
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+button {
+  background: #c8a96a;
+  border: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.6;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h2>Oman Air VA</h2>
+  <div>
+    <a href="#fleet">Fleet</a>
+    <a href="#ranks">Ranks</a>
+    <a href="#join">Join</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div>
+    <h1>Fly Beyond Excellence</h1>
+    <p>Oman Air Virtual is a community on Infinite Flight focused on realistic operations and progression.</p>
+  </div>
+</section>
+
+<section id="fleet">
+  <h1>Fleet</h1>
+
+  <h2>👑 Royal Fleet</h2>
+  <div class="grid">
+    <div class="card"><img src="747.jpg"><div class="overlay"><h3>Boeing 747-8</h3></div></div>
+    <div class="card"><img src="747.jpg"><div class="overlay"><h3>Boeing 747-400</h3></div></div>
+  </div>
+
+  <h2>✈️ Main Fleet</h2>
+  <div class="grid">
+    <div class="card"><img src="787.jpg"><div class="overlay"><h3>Boeing 787-9</h3></div></div>
+    <div class="card"><img src="787.jpg"><div class="overlay"><h3>Boeing 787-8</h3></div></div>
+    <div class="card"><img src="a330.jpg"><div class="overlay"><h3>A330-300</h3></div></div>
+    <div class="card"><img src="a330.jpg"><div class="overlay"><h3>A330-200</h3></div></div>
+    <div class="card"><img src="737.jpg"><div class="overlay"><h3>737-800</h3></div></div>
+    <div class="card"><img src="737.jpg"><div class="overlay"><h3>737 MAX 8</h3></div></div>
+    <div class="card"><img src="737.jpg"><div class="overlay"><h3>737-700</h3></div></div>
+    <div class="card"><img src="737.jpg"><div class="overlay"><h3>737-900</h3></div></div>
+    <div class="card"><img src="a320.jpg"><div class="overlay"><h3>A320</h3></div></div>
+    <div class="card"><img src="e175.jpg"><div class="overlay"><h3>E175</h3></div></div>
+  </div>
+</section>
+
+<section id="ranks">
+  <h1>Ranks</h1>
+  <div class="rank-grid">
+    <div class="rank-card"><h3>Cadet</h3><p>0h</p></div>
+    <div class="rank-card"><h3>First Officer</h3><p>20h</p></div>
+    <div class="rank-card"><h3>Senior FO</h3><p>100h</p></div>
+    <div class="rank-card"><h3>Captain</h3><p>500h</p></div>
+    <div class="rank-card"><h3>Senior Captain</h3><p>1000h</p></div>
+    <div class="rank-card"><h3>Elite Captain</h3><p>3000h</p></div>
+  </div>
+</section>
+
+<section id="join">
+  <h1>Join Us</h1>
+  <input placeholder="Name">
+  <input placeholder="Infinite Flight Username">
+  <input placeholder="Grade">
+  <input placeholder="Hours">
+  <input placeholder="Discord">
+  <button>Apply</button>
+</section>
+
+<section>
+  <h1>Staff</h1>
+  <p>Captain_Omer – CEO</p>
+  <p>2_Rob – COO</p>
+  <p>FSCaptain340 – CMO</p>
+  <p>ViperAcr – Recruiter</p>
+  <p>Oleksandr_Havryliuk – Recruiter</p>
+  <p>William_Yang – Crew Center Manager</p>
+  <p>Mert_Yolda_Eric – Route Manager</p>
+  <p>Speedbird002 – Route Manager</p>
+</section>
+
+<footer>
+  Not affiliated with Oman Air – Infinite Flight Virtual Airline
+</footer>
+
+</body>
+</html>
